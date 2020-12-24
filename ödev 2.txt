@@ -1,0 +1,26 @@
+using System;
+using Matematik;
+
+namespace Namespace
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Yarı çapı girin");
+            double yaricap = double.Parse(Console.ReadLine());
+            double alan = Matematik.Matematik.pi * (yaricap * yaricap);
+            double hacim = Matematik.Matematik.pi * (yaricap * yaricap * yaricap) * (4.0 / 3.0);
+            Console.WriteLine("Kürenin hacmi " + hacim);
+            Console.WriteLine("Dairenin alanı " + alan);
+        }
+    }
+}
+
+namespace Matematik
+{
+    class Matematik
+    {
+        public static readonly double pi = 22.0/ 7.0;
+    }
+}
