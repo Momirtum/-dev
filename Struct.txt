@@ -1,0 +1,39 @@
+using System;
+
+namespace Struct
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Sinema snm;
+
+            Console.WriteLine("İsim Soyisim Giriniz ");
+            snm.KişiBilgileri = Console.ReadLine();
+
+            Console.WriteLine("Bilet Bilgilerini Giriniz ");
+            snm.BiletBilgileri = Console.ReadLine();
+
+            Console.WriteLine("Salon Bilgilerini Giriniz ");
+            snm.SalonBilgileri = Console.ReadLine();
+
+            Console.WriteLine("Film Bİlgilerini Giriniz ");
+            snm.FilmBilgileri = Console.ReadLine();
+            Console.Clear();
+
+            Console.WriteLine("Kişi Bilgileri = " + snm.KişiBilgileri);
+            Console.WriteLine("Bilet Bilgileri = " + snm.BiletBilgileri);
+            Console.WriteLine("Salon Bilgileri = " + snm.SalonBilgileri);
+            Console.WriteLine("Film Bilgileri = " + snm.FilmBilgileri);
+        }
+    }
+
+    struct Sinema
+    {
+        public string BiletBilgileri;
+        public string KişiBilgileri;
+        public string SalonBilgileri;
+        public string FilmBilgileri;
+    }
+}
